@@ -1,5 +1,7 @@
 # linux-gpio-nct610xd
-NCT61XD GPIO Linux Driver
+NCT61XD GPIO Linux Driver for chip NCT6102D  NCT6104D and NCT6106D
+The NCT6102D / NCT6104D / NCT6106D is a member of Nuvoton‟s Super I/O product line. The NCT6102D / NCT6104D / NCT6106D monitors several critical parameters in PC hardware, including power supply voltages, fan speeds, and temperatures. In terms of temperature monitoring, the NCT6102D / NCT6104D / NCT6106D adopts the Current Mode (dual current source) and thermistor sensor approach.
+this driver is sepcific for GPIO function on chip NCT6102D  NCT6104D and NCT6106D.
 
 ## Preconditions (Compile) ##
 you should have the following packages installed:
@@ -53,10 +55,6 @@ unexport all the used GPIO Pins first, then run
 this has to be enabled in your kernel
 
 ## Additional information ##
-see those pages for some c-code examples:
-
-* http://wiki.gnublin.org/index.php/GPIO
-* http://falsinsoft.blogspot.de/2012/11/access-gpio-from-linux-user-space.html
 
 see the Kernel documentation for more details:
 
