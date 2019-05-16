@@ -329,9 +329,6 @@ static int __init nct610xd_find(int addr, struct nct610xd_sio *sio)
 		(unsigned int) addr,
 		(int) superio_inw(addr, SIO_CHIPID));
 
-	/* software reset */
-	superio_outb(addr, SIO_SOFT_RESET, 0x01);
-
 	/* enable GPIO4*/
 	superio_select(addr, SIO_LD_GPIO);
 	gpio_cfg = superio_inb(addr, SIO_GPIO_ENABLE);
